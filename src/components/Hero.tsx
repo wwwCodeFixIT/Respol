@@ -43,7 +43,6 @@ const Icons = {
   ),
 };
 
-// Floating particles component
 const FloatingParticles = () => (
   <div className="absolute inset-0 overflow-hidden pointer-events-none">
     {[...Array(6)].map((_, i) => (
@@ -108,7 +107,8 @@ export function Hero() {
   }, [slides.length]);
 
   return (
-    <section className="relative pt-28 lg:pt-32 pb-16 lg:pb-24 overflow-hidden">
+    // ZWIĘKSZONY PADDING TOP - pt-36 lg:pt-44 zamiast pt-28 lg:pt-32
+    <section className="relative pt-36 lg:pt-44 pb-16 lg:pb-24 overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-red-50/30" />
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-gradient-to-br from-[#ee1215]/5 to-transparent rounded-full blur-3xl animate-pulse" />
@@ -129,7 +129,6 @@ export function Hero() {
             rel="noopener noreferrer" 
             className="group relative bg-white/80 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/50 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:shadow-[#ee1215]/20 transition-all duration-700 min-h-[380px] lg:min-h-[480px] flex flex-col justify-center"
           >
-            {/* Animated Gradient Orbs */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#ee1215]/10 via-[#ff6b6b]/5 to-transparent rounded-full blur-3xl transition-all duration-700 group-hover:scale-110 group-hover:opacity-80" />
             <div className="absolute bottom-0 left-0 w-72 h-72 bg-gradient-to-tr from-[#ee1215]/8 to-transparent rounded-full blur-2xl transition-all duration-700 group-hover:scale-110" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-radial from-[#ee1215]/5 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
@@ -137,7 +136,6 @@ export function Hero() {
             <FloatingParticles />
 
             <div className="relative z-10 p-8 lg:p-12">
-              {/* Badge */}
               <div className="inline-flex items-center gap-2.5 bg-gradient-to-r from-[#ee1215]/15 to-[#ee1215]/5 backdrop-blur-sm text-[#ee1215] px-5 py-2.5 rounded-full text-sm font-bold mb-8 border border-[#ee1215]/10 shadow-lg shadow-[#ee1215]/5">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ee1215] opacity-75" />
@@ -146,7 +144,6 @@ export function Hero() {
                 Platforma B2B
               </div>
 
-              {/* Title */}
               <h2 className="text-4xl lg:text-6xl font-black text-[#1a1a1a] mb-6 leading-[1.1] tracking-tight">
                 Kupuj wygodnie
                 <br />
@@ -166,14 +163,12 @@ export function Hero() {
                 </span>
               </h2>
 
-              {/* Description */}
               <p className="text-gray-600 mb-8 max-w-sm text-lg lg:text-xl leading-relaxed">
                 Ponad <span className="font-bold text-[#ee1215]">400 000</span> produktów. 
                 <br className="hidden sm:block" />
                 Szybkie zamówienia, konkurencyjne ceny.
               </p>
 
-              {/* Features */}
               <div className="flex flex-wrap gap-3 mb-10">
                 <span className="inline-flex items-center gap-2.5 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm px-4 py-2.5 rounded-xl border border-gray-100 shadow-sm group-hover:shadow-md transition-shadow">
                   <span className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
@@ -189,7 +184,6 @@ export function Hero() {
                 </span>
               </div>
 
-              {/* CTA Button */}
               <span className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ee1215] to-[#d60e11] hover:from-[#d60e11] hover:to-[#c00d10] text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all duration-500 shadow-xl shadow-[#ee1215]/30 group-hover:shadow-2xl group-hover:shadow-[#ee1215]/40 group-hover:scale-[1.02]">
                 Przejdź do platformy 
                 <div className="relative w-6 h-6 overflow-hidden">
@@ -199,7 +193,6 @@ export function Hero() {
               </span>
             </div>
 
-            {/* Corner Badge */}
             <div className="absolute top-6 right-6">
               <div className="relative">
                 <div className="absolute inset-0 bg-[#ee1215] rounded-full blur-lg opacity-50 animate-pulse" />
@@ -210,7 +203,6 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Decorative Corner */}
             <div className="absolute bottom-0 right-0 w-32 h-32 opacity-5">
               <svg viewBox="0 0 100 100" fill="none">
                 <circle cx="100" cy="100" r="80" stroke="#ee1215" strokeWidth="2" />
@@ -230,7 +222,6 @@ export function Hero() {
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              {/* Slides */}
               <div className="absolute inset-0">
                 {slides.map((s, idx) => (
                   <a 
@@ -255,7 +246,6 @@ export function Hero() {
                 ))}
               </div>
 
-              {/* Progress Bar */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gray-200/50 z-30">
                 <div 
                   className="h-full bg-gradient-to-r from-[#ee1215] to-[#ff6b6b] transition-all duration-100 ease-linear"
@@ -263,14 +253,12 @@ export function Hero() {
                 />
               </div>
 
-              {/* Brand Badge */}
               <div className="absolute top-4 left-4 z-30">
                 <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white/90 backdrop-blur-sm text-gray-700 shadow-lg border border-white/50">
                   {slides[current].brand}
                 </span>
               </div>
 
-              {/* Navigation Arrows */}
               <button 
                 onClick={(e) => { e.preventDefault(); prev(); }} 
                 className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/90 backdrop-blur-sm hover:bg-[#ee1215] rounded-2xl flex items-center justify-center shadow-xl border border-white/50 transition-all duration-300 opacity-0 group-hover:opacity-100 hover:scale-110 hover:text-white"
@@ -284,7 +272,6 @@ export function Hero() {
                 <Icons.ChevronRight className="w-5 h-5" />
               </button>
 
-              {/* Dots Navigation */}
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-white/50">
                 {slides.map((_, idx) => (
                   <button 
@@ -303,7 +290,6 @@ export function Hero() {
                 ))}
               </div>
 
-              {/* Slide Counter */}
               <div className="absolute bottom-4 right-4 z-20">
                 <span className="text-sm font-bold text-gray-500 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-sm">
                   {current + 1} / {slides.length}
@@ -313,7 +299,6 @@ export function Hero() {
 
             {/* INFO CARDS */}
             <div className="grid grid-cols-2 gap-4">
-              {/* Calendar Card */}
               <a 
                 href="https://respol.pl/praca-w-okresie-swiatecznym/" 
                 target="_blank" 
@@ -339,18 +324,15 @@ export function Hero() {
                 </div>
               </a>
 
-              {/* Prizes Card */}
               <a 
                 href="https://respol.pl/lp-wygraj-nagrody-z-respolem-2025/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group relative bg-gradient-to-br from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] rounded-2xl p-6 lg:p-7 overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-[#ee1215]/20 transition-all duration-500 hover:-translate-y-1"
               >
-                {/* Animated Glow */}
                 <div className="absolute -top-12 -right-12 w-40 h-40 bg-[#ee1215] rounded-full blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
                 <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#ee1215] rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
                 
-                {/* Sparkle Effects */}
                 <div className="absolute top-4 right-4 w-1.5 h-1.5 bg-white rounded-full animate-pulse opacity-60" />
                 <div className="absolute top-8 right-10 w-1 h-1 bg-white rounded-full animate-pulse opacity-40" style={{ animationDelay: '0.5s' }} />
                 <div className="absolute bottom-12 right-6 w-1 h-1 bg-[#ee1215] rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
@@ -374,7 +356,6 @@ export function Hero() {
                   </div>
                 </div>
 
-                {/* Corner Decoration */}
                 <div className="absolute bottom-0 right-0 w-20 h-20 opacity-10">
                   <svg viewBox="0 0 80 80" fill="none">
                     <circle cx="80" cy="80" r="40" stroke="white" strokeWidth="1" />
@@ -388,7 +369,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Custom Styles */}
       <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.4; }
