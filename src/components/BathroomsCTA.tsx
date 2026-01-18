@@ -46,7 +46,6 @@ export function BathroomsCTA() {
   const features = [
     'Profesjonalne doradztwo',
     'Marki premium',
-    'Wizualizacje 3D',
   ];
 
   return (
@@ -86,10 +85,6 @@ export function BathroomsCTA() {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto py-16">
         {/* Badge */}
         <div className="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-md text-white px-5 py-2.5 rounded-full text-sm font-semibold mb-8 border border-white/20">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ee1215] opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#ee1215]" />
-          </span>
           <Icons.MapPin className="w-4 h-4 text-[#ee1215]" />
           Showroomy w całej Polsce
         </div>
