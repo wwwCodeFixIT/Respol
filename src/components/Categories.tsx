@@ -5,7 +5,7 @@ const categories = [
     name: "Technika Grzewcza",
     desc: "Kotły, pompy ciepła, grzejniki",
     href: "https://respol.pl/index.php/technika-grzewcza/",
-    // Kolory: tło / tekst / hover-tło
+    // Zachowujemy kolory kategorii dla rozróżnienia, ale w spójnym stylu
     colors: "bg-orange-50 text-orange-600 group-hover:bg-orange-600 group-hover:text-white",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -62,10 +62,10 @@ const categories = [
 export function Categories() {
   return (
     <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
-      {/* Ozdobne tło (opcjonalne) */}
+      {/* Subtelne tło dekoracyjne - spójne z resztą strony */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gray-50 rounded-full blur-3xl opacity-50" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gray-50 rounded-full blur-3xl opacity-50" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gray-50 rounded-full blur-3xl opacity-60" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gray-50 rounded-full blur-3xl opacity-60" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -85,7 +85,7 @@ export function Categories() {
               href={c.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-gray-200/50 hover:-translate-y-1 transition-all duration-300 flex flex-col items-start h-full"
+              className="group bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-[#ee1215]/5 hover:border-[#ee1215]/30 hover:-translate-y-1 transition-all duration-300 flex flex-col items-start h-full"
             >
               {/* Ikona z dynamicznym tłem */}
               <div 
@@ -104,7 +104,7 @@ export function Categories() {
                 </p>
               </div>
 
-              {/* Strzałka na dole */}
+              {/* Strzałka na dole - teraz spójna z marką */}
               <div className="mt-6 flex items-center text-sm font-semibold text-gray-400 group-hover:text-[#ee1215] transition-colors">
                 Zobacz produkty
                 <svg 
