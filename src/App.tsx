@@ -151,11 +151,11 @@ function Header() {
             className="flex items-center gap-2 hover:text-white transition-colors"
           >
             <span className="opacity-70">Działamy w grupie</span>
-            <img
-              src="https://respol.pl/wp-content/uploads/2025/07/ik-logo-monochrom-1-e1752668376345.png"
-              alt="IK"
-              className="h-4 brightness-0 invert opacity-80"
-            />
+            <img 
+  alt="IK" 
+  className="h-8 w-auto bg-white p-1 rounded opacity-90" 
+  src="https://respol.pl/wp-content/uploads/2025/07/ik-logo-monochrom-1-e1752668376345.png" 
+/>
           </a>
           <div className="flex items-center gap-4">
             {[
@@ -1127,11 +1127,11 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
           {/* Logo & Info */}
           <div className="lg:col-span-2">
-            <img
-              src="https://respol.pl/wp-content/uploads/2021/06/cropped-logo-black-e1623919284881.png"
-              alt="Respol"
-              className="h-10 w-auto brightness-0 invert mb-6"
-            />
+            <img 
+  alt="Respol" 
+  className="h-12 w-auto bg-white p-2 rounded-lg mb-6" 
+  src="https://respol.pl/wp-content/uploads/2021/06/cropped-logo-black-e1623919284881.png" 
+/>
             <p className="text-gray-400 mb-6 max-w-sm leading-relaxed">
               Lider wśród hurtowni techniki grzewczej, sanitarnej i instalacyjnej.{" "}
               <span className="text-white font-medium">35 lat</span> doświadczenia,{" "}
