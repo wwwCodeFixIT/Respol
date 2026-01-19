@@ -176,7 +176,7 @@ export function Reviews() {
 
           {/* Title */}
           <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6 tracking-tight">
-            {" "}nam
+            {" "} nam
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-[#ee1215] via-[#ff4444] to-[#ee1215] bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
                 Zaufali
