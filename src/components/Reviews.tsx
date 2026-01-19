@@ -190,7 +190,7 @@ export function Reviews() {
       </defs>
     </svg>
   </span>
-  {" "}nam Klienci
+  {" "}nam
 </h2>
 
           {/* Rating Summary Card */}
