@@ -46,6 +46,7 @@ export function BathroomsCTA() {
   const features = [
     'Profesjonalne doradztwo',
     'Marki premium',
+    'Wizualizacje 3D',
   ];
 
   return (
