@@ -176,12 +176,6 @@ export function Hero() {
                   </span>
                   Dostawa 24h
                 </span>
-                <span className="inline-flex items-center gap-2.5 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm px-4 py-2.5 rounded-xl border border-gray-100 shadow-sm group-hover:shadow-md transition-shadow">
-                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100">
-                    <Icons.Shield className="w-3.5 h-3.5 text-blue-600" />
-                  </span>
-                  Darmowa od 500 zł
-                </span>
               </div>
 
               <span className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ee1215] to-[#d60e11] hover:from-[#d60e11] hover:to-[#c00d10] text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all duration-500 shadow-xl shadow-[#ee1215]/30 group-hover:shadow-2xl group-hover:shadow-[#ee1215]/40 group-hover:scale-[1.02]">
